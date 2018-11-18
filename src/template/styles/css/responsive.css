@@ -491,8 +491,8 @@
   .chevron-block__title:after {
     border-width: 27px 360px 0 360px; }
   .info-text {
-    margin-top: 0;
-    padding-bottom: 0; }
+    margin-top: 25px;
+    padding-bottom: 25px; }
   .item_nav {
     display: none; }
   .item__wrap table, .item__wrap thead, .item__wrap tbody, .item__wrap tr, .item__wrap td, .item__wrap th {
