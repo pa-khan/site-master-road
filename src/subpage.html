@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<link rel="icon" type="image/png" href="upload/favicon/16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="upload/favicon/256x256.png" sizes="256x256">
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+<div class="main-wrap">
+	<header class="header header_shadow">
+		<div class="panel">
+			<div class="case row i-mid">
+				<div class="panel__contacts row i-mid">
+					<div class="panel__time"><i class="icon icon-clock"></i><p>Круглосуточно</p></div>
+					<div class="panel__email"><i class="icon icon-email"></i><a href="mailto:info@stroyshopper.ru">info@stroyshopper.ru</a></div>
+				</div>
+				<div class="panel__call row i-mid">
+					<div class="panel__hum hum"><span></span><span></span><span></span></div>
+					<div class="panel__phone"><i class="icon icon-phone"></i><a href="tel:+74952367700">8 (495) 236-77-00</a></div>
+					<a data-fancybox data-src="#popup-order" href="javascript:;" class="panel__btn btn btn_orange btn_small"><i class="icon icon-phone-white"></i><span>Заказать звонок</span></a>
+				</div>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="case">
+				<div class="nav__wrap row i-mid">
+					<div class="nav__drop">
+						<div class="nav__drop-btn"><span>Каталог</span><i class="icon icon-hum"></i></div>
+						<div class="nav__drop-list">
+							<ul>
+								<li><a href="">Холодный асфальт</a></li>
+								<li><a href="">Горячий асфальт</a></li>
+								<li><a href="">Битумные смеси</a></li>
+								<li><a href="">Другое</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav__list">
+						<ul>
+							<li><a href="">О магазине</a></li>
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Разгрузка</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Скидки</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Отзывы о магазине</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<main class="main">
+		<div class="subpage">
+			<div class="case row">
+				<div class="subpage__aside aside">
+					<div class="aside__block block">
+						<div class="block__title">Цена</div>
+						<div class="block__wrap">
+							<div class="range">
+								<div class="range__wrap" id="range-1"></div>
+								<script>
+									var slider = document.getElementById('range-1');
+									noUiSlider.create(slider, {
+									    start: [260, 5900],
+									    connect: true,
+									    range: {
+									        'min': 260,
+									        'max': 5900
+									    }
+									});
+								</script>
+								<div class="range__counts row i-mid between">
+									<div class="range__counts-item"><span>260</span> р.</div>
+									<div class="range__counts-item"><span>5900</span> р.</div>
+								</div>
+								<div class="range__inputs row">
+									<div class="range__input input input_border-gray input_small">
+										<input type="text" class="input__wrap" placeholder="от" maxlength="5">
+									</div>
+									<div class="range__input input input_border-gray input_small">
+										<input type="text" class="input__wrap" placeholder="до" maxlength="5">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__block block">
+						<div class="block__title">Вид продукции</div>
+						<div class="block__wrap">
+							<div class="checkboxs">
+								<div class="checkboxs__checkbox checkbox">
+									<input type="checkbox">
+									<label>Холодный асфальт</label>
+								</div>
+								<div class="checkboxs__checkbox checkbox">
+									<input type="checkbox">
+									<label>Горячий асфальт</label>
+								</div>
+								<div class="checkboxs__checkbox checkbox">
+									<input type="checkbox">
+									<label>Битумные смеси</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__block block block_zero">
+						<div class="block__title">Новости</div>
+						<div class="block__wrap">
+							<div class="news-block">
+								<div class="news-block__list">
+									<div class="news-block__item">
+										<div class="news-block__head">
+											<div class="news-block__title"><a href="">С праздником Весны и Труда!</a></div>
+											<div class="news-block__date">01.05.2018</div>
+										</div>
+										<div class="news-block__body">
+											<div class="news-block__text">Поздравляем с 1 Мая всех клиентов и друзей!</div>
+										</div>
+									</div>
+									<div class="news-block__item">
+										<div class="news-block__head">
+											<div class="news-block__title"><a href="">С 8 Марта всех Любимых Женщин!</a></div>
+											<div class="news-block__date">08.03.2018</div>
+										</div>
+										<div class="news-block__body">
+											<div class="news-block__text">Наш мужской коллектив поздравляет всех дам с 8 Марта!</div>
+										</div>
+									</div>
+									<div class="news-block__item">
+										<div class="news-block__head">
+											<div class="news-block__title"><a href="">С Днем Защитника Отечества 2018!</a></div>
+											<div class="news-block__date">23.02.2018</div>
+										</div>
+										<div class="news-block__body">
+											<div class="news-block__text">Коллектив StroyShopper поздравляет всех защитников с праздником! Мира и добра!</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__more more"><a href="">Ещё >></a></div>
+				</div>
+				<div class="subpage__section">
+					<div class="breadcrumbs breadcrumbs_section">
+						<ul>
+							<li><a href="">Главная</a></li>
+							<li>О магазине</li>
+						</ul>
+					</div>
+					<div class="chevron-block">
+						<div class="chevron-block__title title"><span>О магазине</span></div>
+						<div class="chevron-block__head">
+							<div class="chevron-block__text text">
+								<h2>Лучшие идеи для ремонта ваших дорог</h2>
+								<p>Интернет магазин Master Road предлагает широкий ассортимент строительных, отделочных материалов и товаров для дома всем клиентам Москвы и Московской области. Мы отправляем заказы покупателям в регионы России и СНГ, гарантируя своевременность выполнения заказа.</p>
+								<p>Благодаря удобной навигации, легко найти необходимый товар и отложить его в корзину для оформления онлайн заказа. Мы принимаем заказы по телефону или электронной почте – любой, удобный для клиента способ является приемлемым для нас.</p>
+								<p>Master Road работает 24 часа в сутки 7 дней в неделю, чтобы помочь Вам преуспеть в этом бизнесе, провести ремонтные работы на самом высоком профессиональном уровне или справиться с такой непростой задачей, как ремонт своими руками.</p>
+							</div>
+						</div>
+					</div>
+					<div class="info-text text">
+						<h2>Основные преимущества работы с магазином Master Road</h2>
+						<p>Гибкая ценовая политика, широкий спектр сопутствующих услуг и качественный сервис выгодно отличают магазин Master Road среди компаний-конкурентов. Наши основные преимущества – это:</p>
+						<ul>
+							<li>Доступные цены;</li>
+							<li>Прямые поставки товаров от компаний-производителей;</li>
+							<li>Наличие собственного автопарка для оперативной и качественной доставки;</li>
+							<li>Наличие специально оборудованных площадей для складирования и хранения товара;</li>
+							<li>Обширный штат менеджеров-консультантов для оказания профессиональной помощи в оформлении заказов.</li>
+						</ul>
+						<p>Надежные партнерские связи с компаниями-производителями позволяют нам контролировать своевременность поставок всего ассортимента товаров. Благодаря оптовым ценам, у клиентов Master Road есть возможность приобретать любые материалы из каталога интернет магазина по самой выгодной цене.</p>
+						<p>Широкий спектр сопутствующих услуг, от доставки и разгрузки заказа уже оценили наши покупатели из всех уголков страны.</p>
+						<p>Консультанты Master Road – лучшие специалисты в этой сфере. Наши сотрудники всегда рады оказать квалифицированную помощь в выборе нужной позиции, общаясь с клиентами магазина по телефону или прямо на сайте по вопросам технологии применения и преимуществам того или иного материала.</p>
+					</div>
+					<div class="block-text row">
+						<div class="block-text__title title">Master Road</div>
+						<div class="block-text__content text">
+							<h2>Cтроим вместе</h2>
+							<p>Клиенты магазина Master Road могут рассчитывать не только на качественное обслуживание, доступные цены и своевременную доставку, но и на подробные консультации по вопросам строительства и ремонта. Покупай, чтобы строить! Вместе с нами это не только выгодно, но и удобно.</p>
+						</div>
+					</div>
+					<div class="contacts">
+						<div class="contacts__data row">
+							<div class="contacts__data-title title">Контакты <br>в Москве</div>
+							<div class="contacts__data-col">
+								<p>Многоканальный телефон:</p>
+								<p><a href="tel:+74952367700" class="phone">8 (495) 236-77-00</a></p>
+								<p><a href="mailto:info@stroyshopper.ru">info@stroyshopper.ru</a></p>
+								<p>Прием звонков: пн. - вс. (8:00 - 2:00)</p>
+								<a data-fancybox data-src="#popup-order" href="javascript:;" class="contacts__btn btn btn_orange btn_small">Отправить заявку</a>
+							</div>
+							<div class="contacts__data-col text">
+								<p>Наши реквизиты:</p>
+								<ul>
+									<li>ООО «Строймагазин»</li>
+									<li>Юр. адрес: 125362, г. Москва, Подмосковная ул., д. 7.</li>
+									<li>ИНН 7733669490</li>
+									<li>КПП 773301001</li>
+									<li>ОГРН: 5087746136440</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contacts__departments departments row between">
+							<div class="departments__col">
+								<div class="departments__title">Отдел продаж:</div>
+								<div class="departments__text">
+									<p><a href="tel:+74952367700">+7 (495) 236-7700</a> (с 8:00 до 02:00 ночи ежедневно)</p>
+									<p><a href="tel:+78007077148">+7 (800) 707-71-48</a></p>
+								</div>
+							</div>
+							<div class="departments__col">
+								<div class="departments__title">Бухгалтерия:</div>
+								<div class="departments__text">
+									<p><a href="tel:+74952367700">+7 (495) 236-7700</a> доб. 903</p>
+									<p><a href="tel:+79265263083">+7 (926) 526-3083</a> (с 9:00 до 18:00 пн-пт)</p>
+								</div>
+							</div>
+							<div class="departments__col">
+								<div class="departments__title">Склад</div>
+								<div class="departments__text">
+									<p><a href="tel:+74952367700">+7 (495) 236-7700</a> доб. 905</p>
+									<p><a href="tel:+74959895329">+7 (495) 989-5329</a> (с 9:00 до 18:00 пн-пб)</p>
+								</div>
+							</div>
+						</div>
+						<div class="address">
+							<p>Адрес: м. Саларьево, Хованская промзона, Проектируемый проезд №84 </p>
+							<p>Координаты: 55°36′56″N (55.61551), 37°26′44″E (37.44562)</p>
+						</div>
+						<div class="chevron-block">
+							<div class="chevron-block__title title"><span>Схема проезда:</span></div>
+							<div class="chevron-block__head text">
+								<h2>Проезд общественным транспортом:</h2>
+								<p>Метро «Теплый Стан», остановка «Новоясеневский проспект» далее автобус или маршрутное такси № 600 (в сторону Николо-Хованского кладбища), остановка "Северное Хованское кладбище". Далее пешком 100 метров</p>
+								<p>Метро «Саларьево», остановка далее автобус или маршрутное такси №600, №600К, №866 (в сторону Николо-Хованского кладбища), остановка "Хованское кладбище северная территория". Далее пешком 100 метров</p>
+							</div>
+							<div class="chevron-block__body text">
+								<h2>Проезд автотранспортом:</h2>
+								<p>Заезд с Калужского шоссе, продолжение ул. Профсоюзная, после МКАД 500 метров в сторону области, до первого светофора, поворот направо по направлению на Николо-Хованское кладбище, далее по главной дороге около 2 км до входа в Северное Хованское кладбище, на Т-образном перекрестке напротив входа в кладбище налево, далее через 100 метров по правую сторону складская территория.</p>
+								<p>Заезд с Киевского шоссе продолжение Ленинского проспекта после МКАД 500 метров по указателю на Николо-Хованское кладбище, далее по прямой 1 км до Т-образного перекрестка напротив входа в Северное Хованское кладбище, на Т-образном перекрестке направо, далее через 100 метров по правую сторону складская территория.</p>
+								<p>Точного адреса нет, т.к. отсутствует нумерация домов на Хованской промзоне.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="subpage">
+			<div class="case">
+				<div class="subpage__wrap">
+					<div class="main-title">Статьи и советы</div>
+					<div class="headings row">
+						<div class="headings__title">Рубрики</div>
+						<div class="headings__list">
+							<ul>
+								<li><a href="">Холодный асфальт</a></li>
+								<li><a href="">Горячий асфальт</a></li>
+								<li><a href="">Битумные смеси</a></li>
+								<li><a href="">Полезные советы по использованию асфальта</a></li>
+								<li><a href="">Работа с битумом</a></li>
+								<li><a href="">Как утеплить крышу</a></li>
+								<li><a href="">Как подобрать хороший асфальт</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="articles">
+						<div class="articles__list row">
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/1.png');"></div>
+								<div class="articles__link"><a href="">Способы укладки асфальта</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/2.png');"></div>
+								<div class="articles__link"><a href="">Свойства холодного асфальтного покрытия</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/3.png');"></div>
+								<div class="articles__link"><a href="">Бетон против асфальта</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/4.png');"></div>
+								<div class="articles__link"><a href="">Возможно ли ложить асфальт в морозы?</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/1.png');"></div>
+								<div class="articles__link"><a href="">Способы укладки асфальта</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/2.png');"></div>
+								<div class="articles__link"><a href="">Свойства холодного асфальтного покрытия</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/3.png');"></div>
+								<div class="articles__link"><a href="">Бетон против асфальта</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/4.png');"></div>
+								<div class="articles__link"><a href="">Возможно ли ложить асфальт в морозы?</a></div>
+							</div>
+						</div>
+						<div class="articles__more more"><a href="">Ещё >></a></div>
+					</div>
+					<div class="articles">
+						<div class="articles__title title">По видам работ</div>
+						<div class="articles__list row">
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/5.png');"></div>
+								<div class="articles__link"><a href="">Ремонт дорог</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/6.png');"></div>
+								<div class="articles__link"><a href="">Утепление крыши битумными смесями</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/7.png');"></div>
+								<div class="articles__link"><a href="">Утрамбовка люков асфальтом</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/8.png');"></div>
+								<div class="articles__link"><a href="">Ремонт аэропортных путей</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/5.png');"></div>
+								<div class="articles__link"><a href="">Ремонт дорог</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/6.png');"></div>
+								<div class="articles__link"><a href="">Утепление крыши битумными смесями</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/7.png');"></div>
+								<div class="articles__link"><a href="">Утрамбовка люков асфальтом</a></div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img" style="background-image: url('upload/articles/8.png');"></div>
+								<div class="articles__link"><a href="">Ремонт аэропортных путей</a></div>
+							</div>
+						</div>
+						<div class="articles__more more"><a href="">Ещё >></a></div>
+					</div>
+					<div class="main-title">Стоимость доставки</div>
+					<div class="text text_lh text_h-bold clearfix">
+						<p class="mb35">Доставка стройматериалов платная. Тариф рассчитывается индивидуально при оформлении заказа. Мы доставляем стройматериалы по Москве, Московской области и в регионы России и СНГ. Доставка осуществляется ежедневно без выходных в любое удобное для Вас время. </p>
+						<div class="price">
+							<div class="price__head">Стоимость доставки по Москве составляет:</div>
+							<div class="price__body">
+								<div class="price__line row">
+									<ul>
+										<li>до 100 кг</li>
+										<li>до 0.3 м3</li>
+										<li>500 руб</li>
+									</ul>
+									<ul>
+										<li>до 600 кг</li>
+										<li>до 3 м3</li>
+										<li>1000 руб</li>
+									</ul>
+									<ul>
+										<li>до 1,5 тонн</li>
+										<li>до 8 м3</li>
+										<li>1450 руб</li>
+									</ul>
+									<ul>
+										<li>до 2.5 тонн</li>
+										<li>до 15 м3</li>
+										<li>2800 руб</li>
+									</ul>
+									<ul>
+										<li>до 5 тонн</li>
+										<li>до 20 м3</li>
+										<li>3500 руб</li>
+									</ul>
+									<ul>
+										<li>до 7 тонн</li>
+										<li>до 30 м3</li>
+										<li>4500 руб</li>
+									</ul>
+									<ul>
+										<li>до 7 тонн</li>
+										<li>до 30 м3</li>
+										<li>4500 руб</li>
+									</ul>
+									<ul>
+										<li>до 10 тонн</li>
+										<li>до 50 м3</li>
+										<li>5500 руб</li>
+									</ul>
+									<ul>
+										<li>до 15 тонн</li>
+										<li>до 50 м3</li>
+										<li>7000 руб</li>
+									</ul>
+									<ul>
+										<li>до 15 тонн</li>
+										<li>до 50 м3</li>
+										<li>договорная</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h3>Доставка в центр Москвы:</h3>
+						<p>Стоимость въезда машины г/п свыше 1.5 тонны в пределы третьего транспортного кольца - 950 рублей, при въезде в пределы садового кольца - 1350 рублей.</p>
+						<h3>Доставка по Московской области:</h3>
+						<p>Стоимость доставки по Московской области - тариф по Москве плюс 30 руб за 1 км. от МКАД в одну сторону.</p>
+						<p>На электрику и сантехнику в нашем магазине действуют специальные цены по доставке: Доставка негабаритной электрики и сантехники легковым а/м на сумму от 10 тыс. руб - 400 руб свыше 30 тыс. руб - бесплатно</p>
+						<p>Стоимость заказа срочной / приоритетной доставки + 50% к базовому тарифу.</p>
+						<div class="calcus">
+							<div class="calcus__title">Онлайн калькулятор доставки и разгрузки</div>
+							<a href="" class="calcus__btn btn btn_orange btn_small">Рассчитать стоимость</a>
+						</div>
+						<p>Расценки на резку материала: При заказе материала в объеме меньшем, чем упаковка стоимость возрастает: Кабель, Гофра (меньше бухты) на 25% Сантехнические трубы (меньше бухты) на 20% Резка металла, арматуры – дополнительная стоимость не взимается, если резка не сопряжена с отходами. В противном случае резка увеличивает стоимость материала на стоимость остатков. Резка, сопряженная с большими отходами осуществляется только по предоплате.</p>
+						<h2>Доставка в регионы:</h2>
+						<p>Доставка в регионы осуществляется через грузоперевозчиков, осуществляющих сборные грузовые перевозки по России. Мы доставляем стройматериалы до склада пункта отправления грузоперевозчика в Москве, покупатель получает товар на складе в пункте назначения в его городе. Покупатель в этом случае платит грузоперевозчику при приеме товара только за место, занимаемое его грузом.</p>
+						<p>Мы работаем с транспортными компаниями ПЭК, ЖелДорЭкспедиция, КИТ, Деловые линии, Энергия, РАТЭК, Яндекс.Доставка</p>
+					</div>
+					<div class="sort row">
+						<div class="sort__title">Сортировать по:</div>
+						<div class="sort__list row">
+							<div class="sort__select select">
+								<select data-placeholder="наименованию">
+									<option value="0">наименованию</option>
+									<option value="1">От А до Я</option>
+									<option value="2">От Я до А</option>
+								</select>
+							</div>
+							<div class="sort__select select">
+								<select data-placeholder="">
+									<option value="0">цене</option>
+									<option value="1">По возрастанию</option>
+									<option value="2">По убыванию</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="cart">
+						<div class="cart__list">
+							<div class="cart__item item">
+								<div class="item__remove"><i class="icon icon-x"></i></div>
+								<div class="item__wrap">
+									<table>
+										<thead>
+											<tr>
+												<th>Фото</th>
+												<th>Наименование товара</th>
+												<th>Скидка</th>
+												<th>Вес</th>
+												<th>Цена</th>
+												<th>Количество</th>
+												<th>Сумма</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="item__photo"><a href=""><img src="upload/products/2.png" alt=""></a></div>
+												</td>
+												<td>
+													<div class="item__name"><a href="">Холодный асфальт  Perma Patch, 30 кг</a></div>
+													<div class="item__vendor-code">Артикул: 678489489</div>
+												</td>
+												<td>
+													<div class="item__share">0%</div>
+												</td>
+												<td>
+													<div class="item__weight">30 кг</div>
+												</td>
+												<td>
+													<div class="item__price">315 руб.</div>
+													<button class="item__add-item add-cart btn btn_orange btn_small"><i class="icon icon-"></i><span></span></button>
+												</td>
+												<td>
+													<div class="item__increment inrement">
+														<div class="inrement__btn inrement_btn-minus btn">-</div>
+														<div class="inrement__input"><input type="text" value="1" maxlength="2"></div>
+														<div class="inrement__btn inrement_btn-plus btn">+</div>
+													</div>
+												</td>
+												<td>
+													<div class="item__price item__total">315 руб.</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="cart__item item">
+								<div class="item__remove"><i class="icon icon-x"></i></div>
+								<div class="item__wrap">
+									<table>
+										<thead>
+											<tr>
+												<th>Фото</th>
+												<th>Наименование товара</th>
+												<th>Скидка</th>
+												<th>Вес</th>
+												<th>Цена</th>
+												<th>Количество</th>
+												<th>Сумма</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="item__photo"><a href=""><img src="upload/products/2.png" alt=""></a></div>
+												</td>
+												<td>
+													<div class="item__name"><a href="">Холодный асфальт  Perma Patch, 30 кг</a></div>
+													<div class="item__vendor-code">Артикул: 678489489</div>
+												</td>
+												<td>
+													<div class="item__share">0%</div>
+												</td>
+												<td>
+													<div class="item__weight">30 кг</div>
+												</td>
+												<td>
+													<div class="item__price">315 руб.</div>
+													<button class="item__add-item add-cart btn btn_orange btn_small"><i class="icon icon-"></i><span></span></button>
+												</td>
+												<td>
+													<div class="item__increment inrement">
+														<div class="inrement__btn inrement_btn-minus btn">-</div>
+														<div class="inrement__input"><input type="text" value="1" maxlength="2"></div>
+														<div class="inrement__btn inrement_btn-plus btn">+</div>
+													</div>
+												</td>
+												<td>
+													<div class="item__price item__total">315 руб.</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cart__params params row between">
+							<div class="params__col">
+								<i class="icon icon-weight"></i>
+								<p>Общий вес заказа: <span>30 кг</span></p>
+							</div>
+							<div class="params__col">
+								<i class="icon icon-meter"></i>
+								<p>Общий объем заказа: <span>0 куб. м2</span></p>
+							</div>
+							<div class="params__col">
+								<i class="icon icon-price-tag"></i>
+								<p>Итоговая сумма заказа: <span>315 руб.</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="interested">
+						<div class="interested__title title">Вас может заинтересовать</div>
+						<div class="interested__list">
+							<div class="interested__item">
+								<div class="interested__img"><img src="upload/products/1.png" alt=""></div>
+								<div class="interested__name"><a href="">Холодный асфальт Perma Patch, 30 кг</a></div>
+								<div class="interested__control">
+									<div class="interested__price">315 руб.</div>
+									<div class="interested__add-cart add-cart btn"><i class="icon icon-"></i></div>
+								</div>
+							</div>
+							<div class="interested__item">
+								<div class="interested__img"><img src="upload/products/1.png" alt=""></div>
+								<div class="interested__name"><a href="">Холодный асфальт Perma Patch, 30 кг</a></div>
+								<div class="interested__control">
+									<div class="interested__price">315 руб.</div>
+									<div class="interested__add-cart add-cart btn"><i class="icon icon-"></i></div>
+								</div>
+							</div>
+							<div class="interested__item">
+								<div class="interested__img"><img src="upload/products/1.png" alt=""></div>
+								<div class="interested__name"><a href="">Холодный асфальт Perma Patch, 30 кг</a></div>
+								<div class="interested__control">
+									<div class="interested__price">315 руб.</div>
+									<div class="interested__add-cart add-cart btn"><i class="icon icon-"></i></div>
+								</div>
+							</div>
+							<div class="interested__item">
+								<div class="interested__img"><img src="upload/products/1.png" alt=""></div>
+								<div class="interested__name"><a href="">Холодный асфальт Perma Patch, 30 кг</a></div>
+								<div class="interested__control">
+									<div class="interested__price">315 руб.</div>
+									<div class="interested__add-cart add-cart btn"><i class="icon icon-"></i></div>
+								</div>
+							</div>
+							<div class="interested__item">
+								<div class="interested__img"><img src="upload/products/1.png" alt=""></div>
+								<div class="interested__name"><a href="">Холодный асфальт Perma Patch, 30 кг</a></div>
+								<div class="interested__control">
+									<div class="interested__price">315 руб.</div>
+									<div class="interested__add-cart add-cart btn"><i class="icon icon-"></i></div>
+								</div>
+							</div>
+							<div class="interested__item">
+								<div class="interested__img"><img src="upload/products/1.png" alt=""></div>
+								<div class="interested__name"><a href="">Холодный асфальт Perma Patch, 30 кг</a></div>
+								<div class="interested__control">
+									<div class="interested__price">315 руб.</div>
+									<div class="interested__add-cart add-cart btn"><i class="icon icon-"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order">
+						<div class="order__title title">Оформление заказа</div>
+						<div class="order__list">
+							<div class="order__step order__step_gray">
+								<div class="order__step-case">
+									<div class="order__count">1</div>
+									<div class="order__subtitle">Укажите ваши контакты</div>
+									<div class="order__inputs row">
+										<div class="order__input input input_border input_label input_normal">
+											<label class="input__title">Контактное лицо: <span class="color-red">*</span></label>
+											<input type="text" class="input__wrap">
+										</div>
+										<div class="order__input input input_border input_label input_normal input_phone">
+											<label class="input__title">Контактнй телефон: <span class="color-red">*</span></label>
+											<input type="text" class="input__wrap">
+										</div>
+										<div class="order__input input input_border input_label input_normal">
+											<label class="input__title">E-mail: <span class="color-red">*</span></label>
+											<input type="text" class="input__wrap">
+										</div>
+										<div class="order__input input input_border input_label input_normal input_phone">
+											<label class="input__title">Контактнй телефон 2: </label>
+											<input type="text" class="input__wrap">
+										</div>
+									</div>
+									<div class="order__alert">Поля выделеные звёздочкой обязательны для заполнения <span class="color-red">*</span></div>
+								</div>
+							</div>
+							<div class="order__step">
+								<div class="order__step-case">
+									<div class="order__count">2</div>
+									<div class="order__subtitle">Выберите способ доставки</div>
+									<div class="order__tabs">
+										<div class="order__tabs-nav">
+											<ul>
+												<li><a href="#order-tab-1">Доставка</a></li>
+												<li><a href="#order-tab-2">Самовывоз</a></li>
+											</ul>
+										</div>
+										<div class="order__tabs-list">
+											<div class="order__tabs-item" id="order-tab-1">
+												<div class="order__inputs row">
+													<div class="order__input input input_border input_label input_normal">
+														<label class="input__title">Введите адрес для рассчета стоимости доставки.</label>
+														<input type="text" class="input__wrap" placeholder="Адрес:">
+													</div>
+													<div class="order__input order__input_small input input_border input_label input_normal">
+														<label class="input__title"></label>
+														<input type="text" class="input__wrap" placeholder="Квартира/Офис:">
+													</div>
+													<div class="order__input order__input_normal input input_border input_label input_normal input_date">
+														<label class="input__title">Желаемая дата доставки</label>
+														<input type="text" class="input__wrap" placeholder="_ _ . _ _ . _ _ _ _" readonly="readonly">
+													</div>
+												</div>
+												<div class="order__map">
+													<div class="order__map-title"><span class="text-show">Показать</span><span class="text-hide">Скрыть</span> карту</div>
+													<div class="order__map-wrap">
+														<div class="map" id="map-yaca-1"></div>
+														<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+														<script>
+														ymaps.ready(function () {
+												    var myMap = new ymaps.Map('map-yaca-1', {
+												            center: [54.987875, 82.912956],
+												            zoom: 12,
+												            // controls: ['']
+												        }, {
+												            searchControlProvider: 'yandex#search'
+												        }),
+												        myPlacemark = new ymaps.Placemark(myMap.getCenter());
+													    myMap.geoObjects.add(myPlacemark);
+													    // myMap.behaviors.disable('scrollZoom');
+														});
+													</script>
+													</div>
+												</div>
+												<div class="order__radios">
+													<div class="order__radios-title">Выберите время доставки</div>
+													<div class="order__radios-list row">
+														<div class="order__radio radio">
+															<input type="radio" name="delivery-type" value="1" checked="checked">
+															<label><strong>Стандартная</strong><span>(доставка в течении дня)</span></label>
+														</div>
+														<div class="order__radio radio">
+															<input type="radio" name="delivery-type" value="2">
+															<label><strong>Оптимальная</strong><span>(выбор половины дня)</span></label>
+														</div>
+														<div class="order__radio radio">
+															<input type="radio" name="delivery-type" value="3">
+															<label><strong>Приоритетная</strong><span>(интервал 3 часа)</span></label>
+														</div>
+													</div>
+												</div>
+												<div class="order__total">Итоговая сумма доставки: <span>500 руб.</span></div>
+											</div>
+											<div class="order__tabs-item" id="order-tab-2">
+												<div class="order__inputs row">
+													<div class="order__input order__input_large input input_border input_label input_normal">
+														<label class="input__title">Введите адрес</label>
+														<input type="text" class="input__wrap" placeholder="Адрес:">
+													</div>
+												</div>
+												<div class="order__map">
+													<div class="order__map-title"><span class="text-show">Показать</span><span class="text-hide">Скрыть</span> карту</div>
+													<div class="order__map-wrap">
+														<div class="map" id="map-yaca-2"></div>
+														<script>
+														ymaps.ready(function () {
+												    var myMap = new ymaps.Map('map-yaca-2', {
+												            center: [54.987875, 82.912956],
+												            zoom: 12,
+												            // controls: ['']
+												        }, {
+												            searchControlProvider: 'yandex#search'
+												        }),
+												        myPlacemark = new ymaps.Placemark(myMap.getCenter());
+													    myMap.geoObjects.add(myPlacemark);
+													    // myMap.behaviors.disable('scrollZoom');
+														});
+													</script>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order__step order__step_gray">
+								<div class="order__step-case">
+									<div class="order__count">3</div>
+									<div class="order__subtitle">Нужна ли разгрузка?</div>
+									<div class="order__radios">
+										<div class="order__radios-list row">
+											<div class="order__radio radio radio_dark-blue">
+												<input type="radio" name="unloading" value="1" checked="checked">
+												<label><strong>Не требуется</strong></label>
+											</div>
+											<div class="order__radio radio radio_dark-blue">
+												<input type="radio" name="unloading" value="2">
+												<label><strong>На лифте</strong></label>
+											</div>
+											<div class="order__radio radio radio_dark-blue">
+												<input type="radio" name="unloading" value="3">
+												<label><strong>Без лифта</strong></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order__step">
+								<div class="order__step-case">
+									<div class="order__count">4</div>
+									<div class="order__subtitle">Способ оплаты</div>
+									<div class="order__radios">
+										<div class="order__radios-list row">
+											<div class="order__radio radio">
+												<input type="radio" name="pay-methods" value="1" checked="checked">
+												<label><strong>Наличными</strong><span>Курьеру при самовывозе</span></label>
+											</div>
+											<div class="order__radio radio">
+												<input type="radio" name="pay-methods" value="2">
+												<label><strong>Квитанция</strong><span>В отделении банка</span></label>
+											</div>
+											<div class="order__radio radio">
+												<input type="radio" name="pay-methods" value="3">
+												<label><strong>Счет</strong><span>Для юридических лиц</span></label>
+											</div>
+											<div class="order__radio radio">
+												<input type="radio" name="pay-methods" value="4">
+												<label><strong>Картой</strong><span>На сайте, в офисе</span></label>
+											</div>
+											<div class="order__radio radio">
+												<input type="radio" name="pay-methods" value="5">
+												<label><strong>Яндекс деньги</strong></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order__step order__step_gray">
+								<div class="order__step-case">
+									<div class="order__count">5</div>
+									<div class="order__subtitle">Комментарий к заказу</div>
+									<div class="order__message textarea textarea textarea_small textarea_border">
+										<textarea placeholder="Сообщение:" class="textarea__wrap"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="total">
+						<div class="total__title title">Итого:</div>
+						<div class="total__list">
+							<div class="total__body">
+								<div class="total__data total__data_dots">
+									<ul>
+										<li><span>Товары (1)</span><span>315 руб.</span></li>
+										<li><span>Доставка</span><span>500 руб.</span></li>
+										<li><span>Разгрузка</span><span>не требуется</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="total__foot">
+								<div class="total__data total__data_bold">
+									<ul>
+										<li><span>Итого к оплате:</span><span>815 руб.</span></li>
+									</ul>
+								</div>
+								<button class="total__btn btn btn_orange btn_small">Оформить заказ</button>
+							</div>
+						</div>
+					</div>
+					<div class="certificates">
+						<div class="certificates__list row">
+							<a href="upload/certificates/1.png" class="certificates__item" style="background-image: url('upload/certificates/1.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/2.png" class="certificates__item" style="background-image: url('upload/certificates/2.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/3.png" class="certificates__item" style="background-image: url('upload/certificates/3.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/4.png" class="certificates__item" style="background-image: url('upload/certificates/4.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/1.png" class="certificates__item" style="background-image: url('upload/certificates/1.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/2.png" class="certificates__item" style="background-image: url('upload/certificates/2.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/3.png" class="certificates__item" style="background-image: url('upload/certificates/3.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/4.png" class="certificates__item" style="background-image: url('upload/certificates/4.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/1.png" class="certificates__item" style="background-image: url('upload/certificates/1.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/2.png" class="certificates__item" style="background-image: url('upload/certificates/2.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/3.png" class="certificates__item" style="background-image: url('upload/certificates/3.png');" data-fancybox="certificates"></a>
+							<a href="upload/certificates/4.png" class="certificates__item" style="background-image: url('upload/certificates/4.png');" data-fancybox="certificates"></a>
+						</div>
+						<div class="certificates__more more"><a href="">Ещё >></a></div>
+					</div>
+					<div class="thanks">
+						<div class="thanks__title title">Заказ успешно оформлен</div>
+						<div class="thanks__wrap">
+							<div class="thanks__count">Номер Вашего заказа: <span>168 790</span></div>
+							<div class="thanks__text">
+								<p>Подтверждение выслано на ваш E-mail.</p>
+								<p>В ближайшее время с вами свяжется менеджер для уточнения и подтверждения заказа.</p>
+							</div>
+							<div class="thanks__subtitle">Спасибо за покупку в Master Road!</div>
+							<a href="" class="thanks__return btn btn_orange btn_small return">Вернуться на главную</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="case">
+			<div class="footer__top row">
+				<div class="footer__nav row">
+					<div class="footer__nav-col">
+						<div class="footer__nav-title">Информация</div>
+						<div class="footer__nav-list">
+							<ul>
+								<li><a href="">Статьи</a></li>
+								<li><a href="">Производители</a></li>
+								<li><a href="">Доставка</a></li>
+								<li><a href="">Скидки</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__nav-col">
+						<div class="footer__nav-title">Помощь</div>
+						<div class="footer__nav-list">
+							<ul>
+								<li><a href="">Как сделать заказ?</a></li>
+								<li><a href="">Чаво. Политика возврата</a></li>
+								<li><a href="">Форум</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__nav-col">
+						<div class="footer__nav-title">О компании</div>
+						<div class="footer__nav-list">
+							<ul>
+								<li><a href="">Что такое Master Road?</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__contacts">
+					<div class="footer__contact footer__contact_phone">
+						<u><i class="icon icon-phone"></i></u>
+						<p><a href="tel:+74952367700">8 (495) 236-77-00</a></p>
+					</div>
+					<div class="footer__contact footer__contact_email">
+						<u><i class="icon icon-email"></i></u>
+						<p><a href="mailto:info@stroyshopper.ru">info@stroyshopper.ru</a></p>
+					</div>
+					<div class="footer__contact footer__contact_time">
+						<u><i class="icon icon-clock"></i></u>
+						<p>Круглосуточно</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom row i-mid">
+				<div class="footer__logo"><img src="upload/logo.png" alt=""></div>
+				<div class="footer__copy">
+					<p>© Студия “PixWhite”-разработка концепции дизайна 2018.</p>
+					<p>Все права защищены. Не является публичной афертой.</p>
+				</div>
+				<div class="footer__socials socials">
+					<ul>
+						<li><a href="" target="_blank"><i class="icon icon-vk"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-facebook"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-google-plus"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<div class="popup popup_small" id="popup-order">
+	<div class="popup__close" data-fancybox-close=""><i class="icon icon-x"></i></div>
+	<div class="popup__title title">Форма обратной <br>связи</div>
+	<div class="popup__wrap">
+		<div class="popup__input input input_border-gray input_small">
+			<input type="text" class="input__wrap" placeholder="Ваше имя">
+		</div>
+		<div class="popup__input input input_border-gray input_small">
+			<input type="text" class="input__wrap" placeholder="Ваш email">
+		</div>
+		<button class="popup__btn btn btn_orange btn_small">Отправить заявку</button>
+		<div class="popup__policy">Нажимая на кнопку “Отправить заявку” вы соглашаетесь с нашей <a data-fancybox data-src="#popup-policy" href="javascript:;">политикой конфендициальности</a></div>
+	</div>
+</div>
+
+<div class="popup popup_small" id="popup-thanks">
+	<div class="popup__close" data-fancybox-close=""><i class="icon icon-x"></i></div>
+	<div class="popup__title title">Ваша заявка успешно прошла</div>
+	<div class="popup__wrap">
+		<div class="popup__text popup__text_mid text">
+			<p>Мы с Вами свяжемся, как только обработаем Ваш запрос. Это не займет много времени.</p>
+			<p>Спасибо, что выбрали нас!</p>
+		</div>
+		<a href="" class="popup__return btn btn_orange btn_small return">Вернуться на главную</a>
+	</div>
+</div>
+
+<div class="popup popup_large" id="popup-policy">
+	<div class="popup__close" data-fancybox-close=""><i class="icon icon-x"></i></div>
+	<div class="popup__title title">Политика конфендициальности</div>
+	<div class="popup__wrap">
+		<div class="popup__text text">
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, minus!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<h3>Lorem ipsum dolor.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<h3>Lorem ipsum dolor sit amet.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro adipisci commodi ipsam veritatis, blanditiis earum incidunt doloremque repellat consectetur fugiat possimus officiis expedita reiciendis quasi nostrum architecto magnam enim dolore eius quis assumenda, quam cumque ut natus. Unde, dolore. Cupiditate natus sit est, consequatur provident repellat nisi, itaque atque temporibus sapiente deserunt molestias nesciunt, quos accusantium eligendi eos et sed distinctio sint tempora ullam ex illo! Totam distinctio natus alias obcaecati labore dolorum commodi, accusantium tenetur autem. Nulla, unde. Explicabo aspernatur ab fugiat magnam, fugit neque, quaerat nulla facere inventore odit ratione. Blanditiis error distinctio enim cupiditate, numquam, earum?</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
